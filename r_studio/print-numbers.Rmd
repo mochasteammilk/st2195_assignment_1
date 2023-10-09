@@ -1,0 +1,48 @@
+---
+title: "print_numbers"
+author: "ziyan"
+date: "2023-10-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+### Method 1
+
+```{r}
+for (i in 1:10) {
+  print(i)
+}
+```
+
+### Method 2
+
+```{r}
+print(1:10)
+```
+
+### Method 3
+
+```{r}
+for (i in c(1:10)) {
+  print(i)
+}
+```
+
+### Method 4
+
+```{r}
+for (i in c(1:10)){
+  cat(i,"")
+}
+```
+
+### Method 5
+
+```{r}
+cat(1:10)
+```
